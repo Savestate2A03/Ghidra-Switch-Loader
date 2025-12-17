@@ -127,7 +127,7 @@ public abstract class NXOAdapter
         {
             memoryProviderLength = this.getMemoryProvider().length();
         } 
-        catch (IOException e) 
+        catch (RuntimeException e) 
         {
             Msg.error(this, "Failed to get memory provider length", e);
         }
